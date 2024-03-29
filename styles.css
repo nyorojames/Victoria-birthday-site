@@ -104,6 +104,18 @@ p {
   background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
 }
 
+/* Adjust padding between sections for smaller devices */
+@media screen and (max-width: 768px) {
+  /* Example: Reduce padding between sections on smaller devices */
+  #home,
+  #about,
+  #gallery,
+  #wishes {
+    padding-top: 30px; /* Adjust top padding */
+    padding-bottom: 30px; /* Adjust bottom padding */
+  }
+}
+
 /* About Section styles */
 #about {
   background-color: #e8dcc5;
