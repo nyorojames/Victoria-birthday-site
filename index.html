@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Birthday Site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Happy+Monkey&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#wishes">Wishes</a></li>
+      </ul>
+    </nav>
+
+    <!-- Homepage Content -->
+    <section id="home">
+      <div class="container">
+        <h1>Welcome to Your Cozy Birthday Site!</h1>
+        <p>
+          Explore the warmth of friendship and the joy of shared moments in our
+          cozy online space.
+        </p>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="images/coffee shop.jpg" alt="Cozy Cafe" />
+          </div>
+          <div class="slide fade">
+            <img src="images/reading.jpg" alt="Reading Nook" />
+          </div>
+          <div class="slide fade">
+            <img src="images/hot chocolate.jpg" alt="hot chocolate" />
+          </div>
+          <div class="slide fade">
+            <img src="images/ice cream.jpg" alt="ice cream" />
+          </div>
+          <!-- Add more slides as needed -->
+          <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+          <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>Dear Victoria,</p>
+        <p>
+          On this special day, I wanted to create a cozy space just for you. A
+          place where we can celebrate your love for reading, hot chocolate, and
+          café adventures together.
+        </p>
+        <img src="https://media.giphy.com/media/YTbZzCkRQCEJa/giphy.gif" alt="Excited Party GIF">
+        <p>I hope this little birthday site brings a smile to your face.</p>
+        <button id="toggle-info-btn">Show More</button>
+        <p id="additional-info" style="display: none">
+          I admire your passion for exploring new worlds through books and
+          indulging in the warmth of a cup of hot chocolate. Let's continue to
+          create beautiful memories together in our favorite cafes!
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img
+              src="images/coffee.jpg"
+              alt="cozy cafe"
+              onclick="openLightbox('images/coffee.jpg')"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/tiramisu.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/tiramisu.jpg')"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/art.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/art.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/clay.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/clay.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/books 2.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/books 2.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/reading nook.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/reading nook.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/art 2.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/art 2.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/coffee shop 2.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/coffee shop 2.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/art 3.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/art 3.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/coffee shop 3.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/coffee shop 3.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/cozy cafe.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/cozy cafe.jpg')"
+         />
+        </div>
+        <div class="gallery-item">
+            <img
+              src="images/sanat workshop.jpg"
+              alt="Gallery Image 2"
+              onclick="openLightbox('images/sanat workshop.jpg')"
+         />
+        </div>
+
+         <!-- Add more gallery items as needed -->
+        <div id="lightbox" class="lightbox">
+          <span class="close-btn" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section id="wishes">
+      <div class="container">
+        <h2>Birthday Wishes</h2>
+        <div class="wishes-container">
+          <div class="wish">
+            <p>
+              <strong>From James:</strong> Wishing you the happiest birthday
+              filled with love, joy, and lots of cake! 🎂
+            </p>
+            <p>
+              Count your life by smiles, not tears. Count your age by friends,
+              not years. Happy birthday!
+            </p>
+             <img src="https://media.giphy.com/media/l4KibWpBGWchSqCRy/giphy.gif" alt="Funny GIF">
+            <p>
+              Happy birthday! Your life is just about to pick up speed and blast
+              off into the stratosphere. Wear a seat belt and be sure to enjoy
+              the journey. Happy birthday!
+            </p>
+          </div>
+          <!-- Additional wishes can be added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- Link to external JavaScript file -->
+  </body>
+</html>
