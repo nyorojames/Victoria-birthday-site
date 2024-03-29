@@ -146,6 +146,18 @@ p {
   margin-top: 20px; /* Add some space between the button and additional info */
 }
 
+/* Adjust layout for smaller devices */
+@media screen and (max-width: 768px) {
+  /* Example: Adjust the size of the embedded GIFs */
+  #about img,
+  #wishes img {
+    max-width: 100%; /* Make GIFs responsive by setting max-width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure GIFs are displayed as block elements */
+    margin: 0 auto; /* Center GIFs horizontally */
+  }
+}
+
 /* Gallery Section styles */
 #gallery {
   background-color: #eadbc4; /* Light tan background color */
